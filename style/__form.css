@@ -1,0 +1,27 @@
+.input {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: tomato;
+  border: none;
+  color: white;
+  outline: none;
+  width: 300px;
+}
+.input::placeholder {
+  color: white;
+  font-family: var(--Poppins);
+  opacity: 0.6;
+}
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 380px) {
+  .form {
+    flex-direction: column;
+  }
+  .input {
+    width: unset;
+  }
+}
